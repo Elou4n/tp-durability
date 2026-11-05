@@ -27,3 +27,16 @@ img {
     max-width: 100%;
     border-radius: 64px;
 }
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid #90a4ae;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #1565c0;
+    color: white;
+}
