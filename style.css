@@ -15,6 +15,9 @@ h2 {
     border-bottom: 2px solid #1565c0;
     padding-bottom: 8px;
 }
+header h1 {
+    color: #ffffff;
+}
 a {
     color: #00838f;
     text-decoration: none;
@@ -39,4 +42,12 @@ th, td {
 th {
     background-color: #1565c0;
     color: white;
+}
+header {
+    background-color: #1565c0;
+    color: white;
+    text-align: center;
+    border-radius: 14px;
+    padding: 30px 20px;
+    margin-bottom: 25px;
 }
