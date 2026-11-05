@@ -65,3 +65,11 @@ section {
     border-left: 4px solid #00838f;
     padding-left: 14px;
 }
+footer {
+    text-align: center;
+    color: #90a4ae;
+    font-size: 0.9em;
+    margin-top: 40px;
+    padding: 20px 0;
+    border-top: 5px dotted #cfd8dc;
+}
