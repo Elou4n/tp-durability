@@ -15,3 +15,11 @@ h2 {
     border-bottom: 2px solid #1565c0;
     padding-bottom: 8px;
 }
+a {
+    color: #00838f;
+    text-decoration: none;
+}
+a:hover {
+    color: #1565c0;
+    text-decoration: underline;
+}
