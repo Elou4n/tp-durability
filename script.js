@@ -22,6 +22,22 @@ document.querySelector("#bouton-calculer").addEventListener("click", function ()
 
     resultat.textContent = message;
 });
+let score = 0;
+const reponses = document.querySelectorAll(".reponse");
+const affichageScore = document.querySelector("#score");
+
+for (const bouton of reponses) {
+    bouton.addEventListener("click", function () {
+        if (bouton.classList.contains("juste")) {
+            bouton.classList.add("vert");
+            score = score + 1;
+            affichageScore.textContent = "Score : " + score;
+        } else {
+            bouton.classList.add("rouge");
+        }
+        bouton.disabled = true;
+    });
+}
 
 
 console.log(boutonTheme);
