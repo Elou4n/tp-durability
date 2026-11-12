@@ -3,6 +3,26 @@ const curseur = document.querySelector("#curseur-taille");
 const valeurTaille = document.querySelector("#valeur-taille");
 const heure = new Date().getHours();
 const salutation = document.querySelector("#salutation");
+const POIDS_PAGE_MO = 2;
+const champPages = document.querySelector("#pages-par-jour");
+const resultat = document.querySelector("#resultat");
+
+document.querySelector("#bouton-calculer").addEventListener("click", function () {
+    const pages = Number(champPages.value);
+    const goParAn = Math.round(pages * POIDS_PAGE_MO * 365 / 1000);
+
+    let message = "Environ " + goParAn + " Go par an.";
+    if (goParAn < 10) {
+        message = message + " C'est raisonnable !";
+    } else if (goParAn < 100) {
+        message = message + " Ça commence à peser.";
+    } else {
+        message = message + " C'est énorme !";
+    }
+
+    resultat.textContent = message;
+});
+
 
 console.log(boutonTheme);
 console.log("script.js loaded");
