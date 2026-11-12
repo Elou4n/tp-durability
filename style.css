@@ -26,6 +26,24 @@ a:hover {
     color: #1565c0;
     text-decoration: underline;
 }
+.outils {
+position: fixed;
+top: 12px;
+right: 12px;
+display: flex;
+flex-direction: column;
+gap: 6px;
+padding: 10px;
+background-color: rgb(0, 0, 0);
+border-radius: 8px;
+}
+body.sombre {
+background-color: #111c1b;
+color: #e2ebe9;
+}
+.sombre h2 {
+color: #7fd1c3;
+}
 img {
     max-width: 100%;
     border-radius: 64px;
@@ -73,22 +91,4 @@ footer {
     margin-top: 40px;
     padding: 20px 0;
     border-top: 5px dotted #cfd8dc;
-}
-.outils {
-position: fixed;
-top: 12px;
-right: 12px;
-display: flex;
-flex-direction: column;
-gap: 6px;
-padding: 10px;
-background-color: white;
-border-radius: 8px;
-}
-body.sombre {
-background-color: #111c1b;
-color: #e2ebe9;
-}
-.sombre h2 {
-color: #7fd1c3;
 }
