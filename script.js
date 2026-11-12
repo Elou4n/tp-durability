@@ -15,4 +15,7 @@ document.body.classList.toggle("sombre");
 
 curseur.addEventListener("input", function () {
     console.log(curseur.value);
+    document.body.style.fontSize = curseur.value + "%";
+    valeurTaille.textContent = curseur.value + " %";
+
 });
