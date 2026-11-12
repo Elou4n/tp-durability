@@ -1,4 +1,7 @@
 const boutonTheme = document.querySelector("#bouton-theme");
+const curseur = document.querySelector("#curseur-taille");
+const valeurTaille = document.querySelector("#valeur-taille");
+
 console.log(boutonTheme);
 console.log("script.js loaded");
 boutonTheme.addEventListener("click", function () {
@@ -10,3 +13,6 @@ document.body.classList.toggle("sombre");
     }
 });
 
+curseur.addEventListener("input", function () {
+    console.log(curseur.value);
+});
